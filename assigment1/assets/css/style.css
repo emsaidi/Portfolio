@@ -7,12 +7,13 @@ html{
 }
 
 body {
-	margin: auto;
+	margin: auto 0;
 	padding: 0px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	background-color: #ffffff;
 	background-image: url("../images/cheap_diagonal_fabric.png");
 	color: #777777;
+	width: 100%
 }
 
 .wrapper {
@@ -34,7 +35,7 @@ nav {
 }
 
 h2 {
-	margin: 30px;
+	margin: 5%;
 	padding-bottom: 30px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 28px;
@@ -45,7 +46,7 @@ h2 {
 }
 
 h3 {
-	padding: 30px 0px;
+	padding: 30px 0;
 	color: #4aaaa5;
 	padding-bottom: 30px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
@@ -67,7 +68,6 @@ header{
 #nav-buttons ul {
 	list-style-type:none;
 	display: inline-block;
-	color: white;
 	text-decoration: none; 
 	overflow: hidden;
 	padding: 20px 0px;
@@ -101,7 +101,7 @@ header{
 }
 
 .logo {
-	padding: 30px 30px;
+	padding: 30px 3%;
 	float: left;
 	text-decoration: none;
 	overflow: auto;
@@ -134,7 +134,7 @@ header{
 	width: 200px;
 	height: auto;
 	float: left;
-	padding: 0px 30px 0px 30px;
+	padding: 0px 5%;
 }
 
 .bio {
@@ -189,17 +189,17 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .portfolio-pic-left {
 	position: relative;
-	padding: 0px 0px 30px 30px;
+	padding: 0 0 30px 5%;
 	float: left;
 }
 
 .portfolio-pic-right {
 	position: relative;
-	padding: 0px 30px 30px 0px;
+	padding: 0 5% 30px 0;
 	float: right;
 }
 
-img {
+.gallery img {
 	width: 275px;
 	height: auto;
 }
@@ -213,7 +213,7 @@ img {
 	background-color: #4aaaa5;
 	font-size: 20px;
 	text-align: center;
-	opacity: .90;
+	opacity: ;
 
 }
 
@@ -260,10 +260,35 @@ img {
 }
 
 @media screen and (max-width: 980px) {
+	body {
+		width: 100%;
+	}
 
+	.wrapper{
+		width: 94%;
+	}
+	.about-me {
+		width: 60.9%;
+	}
+	.gallery {
+		wdith: 60.9%;
+	}
+	.email-me {
+		width: 60.9%;
+	}
+	.sidebar{
+		width: 28%;
+	}
+	#contact-me li a {
+	padding: 0px 3.2% 0px 0px;
+
+}
 
 }
 @media screen and (max-width: 768px) {
+	body {
+		width: 100%;
+	}
 
 	.wrapper{
 		width: 94%}
@@ -271,6 +296,7 @@ img {
 	.about-me{
 		width: 100%;
 	}
+
 
 	.gallery {
 		width: 100%;
@@ -295,7 +321,7 @@ img {
 		list-style-type:none;
 		padding: 0px 30px;
 		overflow: hidden;
-}
+	}
 
 	#contact-me li a {
 		padding: 0px 10px 0px 0px;
@@ -314,33 +340,61 @@ img {
 		margin: 30px 30px;
 		padding: 0px 0px 30px 0px;
 	}
-	img {
-		width: 100%;
+	.gallery img {
+		width: 95%;
 		height: auto;
-		max-width: 662px;
+		float: none;
+		margin: 0 auto;
+
 	}
 	.portfolio-name {
 		top: 75%;
-		width: 662px;
+		width: 90.3%;
+		margin: 0 auto;
+	}
+	.portfolio-pic-left {
+		position: relative;
+		padding: 0 0 30px 5%;
+		float: none;
+	}
+
+	.portfolio-pic-right {
+		position: relative;
+		padding: 0 0 30px 5%;
+		float: none;
 	}
 }
 @media screen and (max-width: 640px) {
+	body {
+		width: 100%;
+	}
+
+	#nav-buttons ul {
+		background-color: white;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	#nav-buttons li a{
+		float: none;
+	}
+
 	#bio-image {
-		width: auto;
-		height: auto;
-		max-width: 541px;
-		padding: 0px 30px 30px 30px;
+		width: 90%;
+		padding: 0px 0px 30px 0px;
+		margin: 0% 5%;
 		}
 
-	img{
-		width: auto;
+	.gallery img{
+		width: 95%;
 		height: auto;
 		max-width: 541px;
 	}
 
-	.portfolio-name {
-		top: 75%;
-		width: 541px;
-	}
 
+}
+
+@media screen and (max-width: 546px){
+	body {
+		width: 546px;
+	}
 }
