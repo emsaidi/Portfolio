@@ -70,7 +70,7 @@ header{
 	color: white;
 	text-decoration: none; 
 	overflow: hidden;
-	padding: 20px 30px;
+	padding: 20px 0px;
 
 }
 
@@ -88,7 +88,7 @@ header{
 	text-align; center;
 	padding: 14px 16px;
 	text-decoration: none;
-	color: white;
+	color: #777777;
 }
 
 #nav-buttons li a:visited {
@@ -228,7 +228,6 @@ img {
 	display: block;
 	list-style-type:none;
 	padding: 30px 0px;
-
 	overflow: hidden;
 }
 
@@ -238,11 +237,11 @@ img {
 
 #contact-me li a {
 	padding: 0px 10px 0px 0px;
-	float:right;
+	float:left;
 }
 
 #contact-me-right li a {
-	padding: 0px 0px 0px 0px;
+	padding: none;
 	float:right;
 }
 
@@ -258,4 +257,90 @@ img {
 	text-align: center;
 	padding-top: 30px;
 	border-top: 10px solid #4aaaa5;
+}
+
+@media screen and (max-width: 980px) {
+
+
+}
+@media screen and (max-width: 768px) {
+
+	.wrapper{
+		width: 94%}
+
+	.about-me{
+		width: 100%;
+	}
+
+	.gallery {
+		width: 100%;
+	}
+
+	.email-me {
+		width: 100%;
+
+	}
+	form {
+		margin: 0px 30px 0px 0px;
+	}
+	.sidebar{
+		width: 100%;
+		padding: 0px 0px 30px 0px;
+		margin-bottom: 30px;
+		float: left;
+	}
+
+	#contact-me ul {
+		display: block;
+		list-style-type:none;
+		padding: 0px 30px;
+		overflow: hidden;
+}
+
+	#contact-me li a {
+		padding: 0px 10px 0px 0px;
+		float: left;
+	}
+
+	input {
+		width: 100%;
+		padding: 0px 30px 0px 0px;
+	}
+
+	textarea {
+		width: 100%;
+	}
+	h3 {
+		margin: 30px 30px;
+		padding: 0px 0px 30px 0px;
+	}
+	img {
+		width: 100%;
+		height: auto;
+		max-width: 662px;
+	}
+	.portfolio-name {
+		top: 75%;
+		width: 662px;
+	}
+}
+@media screen and (max-width: 640px) {
+	#bio-image {
+		width: auto;
+		height: auto;
+		max-width: 541px;
+		padding: 0px 30px 30px 30px;
+		}
+
+	img{
+		width: auto;
+		height: auto;
+		max-width: 541px;
+	}
+
+	.portfolio-name {
+		top: 75%;
+		width: 541px;
+	}
+
 }
